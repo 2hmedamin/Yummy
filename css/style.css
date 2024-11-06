@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+}
+
+header section.side-bar h5 {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 40%;
+}
+
+div.inner1 {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.side-bar li {
+  font-size: 20px;
+  padding-block: 5px;
+  padding-inline: 5px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+section.side-bar li a {
+  transition: all 0.5s;
+}
+
+.item {
+  width: 5%;
+}
+
+.icon-side {
+  padding-top: 100%;
+}
+
+
+/* home */
+
+.meal-layer {
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.card:hover .meal-layer {
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  opacity: 1;
+}
+
+.card {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  animation: l1 1s linear infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l1 {to{opacity: 0}}
+
+
+.loadingScreen {
+  display: flex;
+  background-color: rgba(214, 46, 186, 0.425);
+}
